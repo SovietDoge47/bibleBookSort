@@ -55,7 +55,7 @@ public class BibleBookCollection
             for (int j = 0; j < this.theBooks.size()-i-1; j++) 
                 if (this.theBooks.get(j).getName().compareTo(this.theBooks.get(j+1).getName()) >= 0)
                 { 
-                    // swap arr[j+1] and arr[j] 
+                    // swap this.theBooks(j+1) and this.theBooks(j) 
                     BibleBook temp = this.theBooks.get(j); 
                     this.theBooks.set(j, this.theBooks.get(j+1));
                     this.theBooks.set(j+1, temp); 
